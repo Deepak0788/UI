@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Shape {
+            // intializing an object
+            constructor(color, borderwidth) {
+                this.color = color;
+                this.borderwidth = borderwidth;
+            }
+            // Declearing a method
+            detail() {
+                document.write("color = " + this.color + "<br>" + "borderwidth = " + this.borderwidth)
+            }
+        }
+        // passing a object to a variable
+        var s1 = new Shape("Red", 4)
+        s1.detail();      
+    </script>
+   
+</body>
+</html>

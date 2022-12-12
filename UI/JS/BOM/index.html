@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <h2>variable are properties of window object</h2>
+    <script>
+        var x = "hello";
+        //document.write(x);
+        document.write(window.x);
+        
+    </script>
+    <h2>function are method of window object</h2>
+    <script>
+        function xyz(){
+            document.write("hi")
+        }
+        //xyz();
+        window.xyz();
+    </script>
+    <h2>Method like alert, confirm, prompt are method of window object</h2>
+    <script>
+        //alert("hi");
+        window.alert("hi");
+        //confirm("ok");
+        window.confirm("ok");
+        //prompt();
+        window.prompt();
+        
+    </script>
+</body>
+</html>

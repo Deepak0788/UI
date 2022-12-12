@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Objects in JS</title>
+</head>
+
+<body>
+<h1>There are 3 ways to create objects.
+    <p>By object literal</p>  
+    <script>
+      emp = {id:01, Name: "Rahul", salary: 1000}
+    document.write(emp.id +" "+ emp.Name+" "+emp.salary)
+    </script>
+    <p>By using an Object Constructor</p>
+    <script>
+        function emp(id, Name, salary){
+            this.id=id;
+            this.Name=Name;
+            this.salary=salary;
+        }
+        var e = new emp (02, "Vikas", 2000)
+        document.write(e.id +" "+e.Name+" "+e.salary);
+
+    </script>
+    <p>By Creating instance of Object</p>
+    <script>
+        var emp = new Object()
+        emp.id = 03;
+        emp.Name = "Sanjay";
+        emp.salary = 3000;
+        document
+    </script>
+
+</body>
+
+</html>

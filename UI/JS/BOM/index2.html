@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New window open like pop up</title>
+</head>
+<body>
+    <button id="btn1">Goggle</button>
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let url= "https:/www.goggle.com";
+        let features = "height = 500, width= 500";
+        btn1.addEventListener("click", function(){
+window.open(url, "goolge", features);
+// three parameter can pass url, name
+        });
+    </script>
+    
+</body>
+</html>

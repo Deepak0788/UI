@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSheet</title>
+    <script>
+        function js(){
+            document.getElementById('demo1').innerHTML='Hello Js 2'
+        }
+    </script>
+    <script src="Script.js"></script>
+
+</head>
+<body>
+    <h1>Inline</h1>
+    <h1 id="demo">This Line is going to replace</h1>
+ <button onclick="document.getElementById('demo').innerHTML='Hello Js 1'"> Click Me </button>
+
+ <h1>Internal JS</h1>
+ <h1 id="demo1">This Line is going to replace</h1>
+ <button onclick="js()">Click Me</button>
+
+ <h1>External js</h1>
+ <h1 id="demo2">This Line going to replace</h1>
+ <button onclick="js1()">Click Me</button>
+</body>
+</html>
